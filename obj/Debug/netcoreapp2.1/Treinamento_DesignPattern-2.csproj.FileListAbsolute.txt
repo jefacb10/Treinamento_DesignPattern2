@@ -1,0 +1,11 @@
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\bin\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.deps.json
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\bin\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.runtimeconfig.json
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\bin\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.runtimeconfig.dev.json
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\bin\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.dll
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\obj\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.csprojAssemblyReference.cache
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\obj\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.csproj.CoreCompileInputs.cache
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\obj\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.AssemblyInfoInputs.cache
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\obj\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.AssemblyInfo.cs
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\bin\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.pdb
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\obj\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.dll
+C:\Users\jefac\source\repos\Treinamento_DesignPattern-2\obj\Debug\netcoreapp2.1\Treinamento_DesignPattern-2.pdb
