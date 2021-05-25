@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq.Expressions;
+using Treinamento_DesignPattern_2.Adapter;
 using Treinamento_DesignPattern_2.Bridge;
+using Treinamento_DesignPattern_2.Command;
+using Treinamento_DesignPattern_2.Facade;
 using Treinamento_DesignPattern_2.Factory;
 using Treinamento_DesignPattern_2.Flyweight;
 using Treinamento_DesignPattern_2.Interpreter;
 using Treinamento_DesignPattern_2.Memento;
+using Treinamento_DesignPattern_2.Singleton;
 using Treinamento_DesignPattern_2.Visitor;
 
 namespace Treinamento_DesignPattern_2
@@ -107,6 +111,55 @@ namespace Treinamento_DesignPattern_2
             mensagem.Enviador = enviador;
             mensagem.Envia();
 
+            #endregion
+
+            #region Command
+            Console.WriteLine("\n\n-----COMMAND-----\n");
+
+            FilaDeTrabalho filaDeTrabalho = new FilaDeTrabalho();
+            Pedido p1 = new Pedido("Jeferson",300.0);
+            Pedido p2 = new Pedido("Maria", 200.0);
+            filaDeTrabalho.Adiciona(new PagaPedido(p1)); 
+            filaDeTrabalho.Adiciona(new PagaPedido(p2));
+
+            filaDeTrabalho.Adiciona(new FinalizaPedido(p1));
+            filaDeTrabalho.Processa();
+
+            #endregion
+
+            #region Adapter
+            Console.WriteLine("\n\n-----ADAPTER-----\n");
+            Cliente cliente1 = new Cliente();
+            cliente1.Nome = "Maria Teresa";
+            cliente1.Endereco = "Rua dos Limoeiros";
+            cliente1.DataNasc = DateTime.Parse("1991-02-18");
+
+            IGerador geradorDeXml = new GeradorDeXml();
+            Console.WriteLine(geradorDeXml.Gera(cliente1));
+
+            Cliente cliente2 = new Cliente();
+            cliente2.Nome = "Augusto Barros";
+            cliente2.Endereco = "Rua dos Eucaliptos";
+            cliente2.DataNasc = DateTime.Parse("1995-05-20");
+
+            IGerador geradorDeJson = new GeradorDeJson();
+            Console.WriteLine(geradorDeJson.Gera(cliente2));
+
+            #endregion
+
+            #region Facade
+            Console.WriteLine("\n\n-----FAÇADE-----\n");
+
+            Cliente cliente3 = new EmpresaFacade().BuscaCliente("1234");
+            Console.WriteLine(cliente3.Nome);
+
+            #endregion
+
+            #region Singleton
+            Console.WriteLine("\n\n-----SINGLETON-----\n");
+
+            Cliente cliente4 = new EmpresaFacadeSingleton().Instancia.BuscaCliente("4321");
+            Console.WriteLine(cliente4.Endereco);
             #endregion
         }
     }
